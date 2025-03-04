@@ -38,4 +38,7 @@ module.exports = function (reverse, t) {
 	t.deepEqual(sparse4, [4, , , 1], 'original sparse array is reversed');
 	t.deepEqual(sparse4R, [4, , , 1], 'returned sparse array is reversed');
 	t.equal(sparse4, sparse4R, 'returned sparse array is the original sparse array');
+
+	var arr = [1, 2];
+	t.notEqual(String(arr), String(reverse(arr), 'does not have safari 12.0 bug'));
 };
