@@ -1,0 +1,31 @@
+{
+	"name": "array.prototype.reverse",
+	"version": "0.0.0",
+	"description": "Array.prototype.reverse spec-compliant polyfill",
+	"main": "index.js",
+	"exports": {
+		"./package.json": "./package.json"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/es-shims/Array.prototype.reverse.git"
+	},
+	"keywords": [
+		"javascript",
+		"ecmascript",
+		"polyfill",
+		"shim",
+		"array",
+		"reverse",
+		"es-shim API"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/es-shims/Array.prototype.reverse/issues"
+	},
+	"homepage": "https://github.com/es-shims/Array.prototype.reverse#readme"
+}
