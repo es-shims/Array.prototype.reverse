@@ -10,8 +10,13 @@ var ToObject = require('es-object-atoms/ToObject');
 var ToString = require('es-abstract/2024/ToString');
 
 var $TypeError = require('es-errors/type');
+var isString = require('is-string');
 
 module.exports = function reverse() {
+	if (isString(this)) {
+		Set(String(this), 0, '', true);
+		throw new $TypeError('Cannot assign to read only property of ' + this);
+	}
 	var O = ToObject(this); // step 1
 	var len = LengthOfArrayLike(O); // step 2
 
